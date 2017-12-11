@@ -21,6 +21,7 @@ public class NativeCityBank implements Bank {
 
     private void notifyClient(int requiredAmount) {
         System.out.println(String.format("You asked for: %s", requiredAmount));
-        System.out.println(String.format("Total withdrawn after fee: %s", amountFromAccount + requiredAmount));
+        System.out.println(String.format("Total withdrawn after fee: %s",
+                amountFromAccount + requiredAmount));
     }
 }
